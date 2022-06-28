@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WebAPIPeliculas.Migrations
 {
-    public partial class Actores : Migration
+    public partial class actores : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

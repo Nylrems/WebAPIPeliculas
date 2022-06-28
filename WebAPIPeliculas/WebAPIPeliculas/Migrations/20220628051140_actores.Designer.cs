@@ -12,8 +12,8 @@ using WebAPIPeliculas;
 namespace WebAPIPeliculas.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220624171601_Actores")]
-    partial class Actores
+    [Migration("20220628051140_actores")]
+    partial class actores
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

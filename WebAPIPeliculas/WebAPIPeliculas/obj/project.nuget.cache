@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bZghgTlWjkLyQrVuAW+vYjoGwak8GDNDWTh7ytQZAWzU5BLe+H/IA27ndinHZD+RWlwImmOcPYrh2GzOrBCycw==",
+  "dgSpecHash": "NS/5QLkG/f19PmUJkxnorLv1bydu3sdbq6kZyuQU6PzbxZTXRE69Rbp81zBPWD4FOimC/hRsyuq4C7cgw36dyA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
+  "projectFilePath": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Smerl\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Smerl\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

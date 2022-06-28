@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {}
+    "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {
+    "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
+        "projectUniqueName": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
         "projectName": "WebAPIPeliculas",
-        "projectPath": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
+        "projectPath": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
         "packagesPath": "C:\\Users\\Smerl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\obj\\",
+        "outputPath": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Smerl\\AppData\\Roaming\\NuGet\\NuGet.Config",
