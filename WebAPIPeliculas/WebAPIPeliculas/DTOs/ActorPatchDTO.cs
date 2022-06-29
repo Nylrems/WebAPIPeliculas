@@ -1,4 +1,6 @@
-﻿namespace WebAPIPeliculas.DTOs
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace WebAPIPeliculas.DTOs
 {
     public class ActorPatchDTO
     {
