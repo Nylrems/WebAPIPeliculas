@@ -1,11 +1,37 @@
 {
   "Version": 1,
-  "Hash": "ArQ1ZEdTpSXdMtgvuf0ECE18XQd7WdpGGB6zHg1L3uQ=",
+  "Hash": "Il1uu++Zje9MInZ7bWLDTZOuprBXREbwHPGFfBZsqjw=",
   "Source": "WebAPIPeliculas",
   "BasePath": "_content/WebAPIPeliculas",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebAPIPeliculas\\wwwroot",
+      "Source": "WebAPIPeliculas",
+      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
+      "BasePath": "_content/WebAPIPeliculas",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\actores\\6b148671-fb7b-4dd0-88a0-b900645c41d5.png",
+      "SourceId": "WebAPIPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
+      "BasePath": "_content/WebAPIPeliculas",
+      "RelativePath": "actores/6b148671-fb7b-4dd0-88a0-b900645c41d5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\actores\\6b148671-fb7b-4dd0-88a0-b900645c41d5.png"
+    }
+  ]
 }

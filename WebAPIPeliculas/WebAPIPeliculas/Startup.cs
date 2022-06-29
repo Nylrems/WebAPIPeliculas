@@ -17,6 +17,10 @@ namespace WebAPIPeliculas
             services.AddAutoMapper(typeof(Startup));
 
             services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosAzure>(); 
+            
+            //para trabajar local
+            //services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosLocal>();
+            services.AddHttpContextAccessor();
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
@@ -33,6 +37,8 @@ namespace WebAPIPeliculas
             }
 
             app.UseHttpsRedirection();
+
+            app.UseStaticFiles();
 
             app.UseRouting();
 
