@@ -16,10 +16,11 @@ namespace WebAPIPeliculas
         {
             services.AddAutoMapper(typeof(Startup));
 
-            services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosAzure>(); 
+            //Para trabajar guardando los datos en azure
+            //services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosAzure>(); 
             
             //para trabajar local
-            //services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosLocal>();
+            services.AddTransient<IAlmacenadorArchivos, AlmacenadorArchivosLocal>();
             services.AddHttpContextAccessor();
 
             services.AddDbContext<ApplicationDbContext>(options =>
