@@ -1,6 +1,15 @@
-﻿namespace WebAPIPeliculas.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace WebAPIPeliculas.Controllers
 {
-    public class PeliculasController
+    [ApiController]
+    [Route("api/peliculas")]
+    public class PeliculasController:ControllerBase
     {
+        public PeliculasController()
+        {
+
+        }
+
     }
 }
