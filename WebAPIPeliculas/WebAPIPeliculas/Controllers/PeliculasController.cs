@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPIPeliculas.DTOs;
@@ -69,7 +70,7 @@ namespace WebAPIPeliculas.Controllers
             return new CreatedAtRouteResult("obtenerPelicula", new { id = pelicula.Id}, peliculaDTO);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<ActionResult> Put(int id, [FromForm] PeliculaCreacionDTO peliculaCreacionDTO)
         {
             var peliculaDB = await context.Peliculas.FirstOrDefaultAsync(x => x.Id == id);
@@ -92,6 +93,55 @@ namespace WebAPIPeliculas.Controllers
             }
             await context.SaveChangesAsync();
             return NoContent(); 
+        }
+
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> Patch(int id, [FromBody] JsonPatchDocument<PeliculaPatchDTO> patchDocument)
+        {
+            if (patchDocument == null)
+            {
+                return BadRequest();
+            }
+
+            var entidadDB = await context.Peliculas.FirstOrDefaultAsync(x => x.Id == id);
+
+            if(entidadDB == null)
+            {
+                return NotFound();
+            }
+
+            var entidadDTO = mapper.Map<PeliculaPatchDTO>(entidadDB);
+
+            patchDocument.ApplyTo(entidadDTO, ModelState);
+
+            var esValido = TryValidateModel(entidadDTO);
+
+            if (!esValido)
+            {
+                return BadRequest(ModelState);
+            }
+
+            mapper.Map(entidadDTO, entidadDB);
+
+            await context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var existe = await context.Peliculas.AnyAsync(x => x.Id == id);
+
+            if (!existe)
+            {
+                return NotFound();
+            }
+
+            context.Remove(new Pelicula() { Id = id });
+            await context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }
