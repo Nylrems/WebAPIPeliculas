@@ -75,24 +75,25 @@ namespace WebAPIPeliculas.Controllers
         {
             var peliculaDB = await context.Peliculas.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (peliculaDB == null) { return NotFound(); }
+            return Ok();
+            //if (peliculaDB == null) { return NotFound(); }
 
-            peliculaDB = mapper.Map(peliculaCreacionDTO, peliculaDB);
+            //peliculaDB = mapper.Map(peliculaCreacionDTO, peliculaDB);
 
-            if(peliculaCreacionDTO.Poster != null)
-            {
-                using (var memoryStram = new MemoryStream())
-                {
-                    await peliculaCreacionDTO.Poster.CopyToAsync(memoryStram);
-                    var contenido = memoryStram.ToArray();
-                    var extension = Path.GetExtension(peliculaCreacionDTO.Poster.FileName);
-                    peliculaDB.Poster = await almacenadorArchivos.EditarArchivo(contenido, extension, contenedor,
-                        peliculaDB.Poster,
-                        peliculaCreacionDTO.Poster.ContentType);
-                }
-            }
-            await context.SaveChangesAsync();
-            return NoContent(); 
+            //if(peliculaCreacionDTO.Poster != null)
+            //{
+            //    using (var memoryStram = new MemoryStream())
+            //    {
+            //        await peliculaCreacionDTO.Poster.CopyToAsync(memoryStram);
+            //        var contenido = memoryStram.ToArray();
+            //        var extension = Path.GetExtension(peliculaCreacionDTO.Poster.FileName);
+            //        peliculaDB.Poster = await almacenadorArchivos.EditarArchivo(contenido, extension, contenedor,
+            //            peliculaDB.Poster,
+            //            peliculaCreacionDTO.Poster.ContentType);
+            //    }
+            //}
+            //await context.SaveChangesAsync();
+            //return NoContent(); 
         }
 
         [HttpPatch("{id}")]
