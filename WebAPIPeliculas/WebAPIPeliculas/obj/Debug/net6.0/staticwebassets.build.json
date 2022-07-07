@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xudS5cyWaJf2oxnkSz7eKiRTAdeW02WhKOiHUQw8XSY=",
+  "Hash": "2Hhe6ecUDyzkafZIel7mGddNqr8+yb3rDGqhnxghy7s=",
   "Source": "WebAPIPeliculas",
   "BasePath": "_content/WebAPIPeliculas",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\actores\\6b148671-fb7b-4dd0-88a0-b900645c41d5.png"
+    },
+    {
+      "Identity": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\pelicula\\0d280274-5d0a-4edb-aadf-e7e41e4a3a98.png",
+      "SourceId": "WebAPIPeliculas",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
+      "BasePath": "_content/WebAPIPeliculas",
+      "RelativePath": "pelicula/0d280274-5d0a-4edb-aadf-e7e41e4a3a98.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\pelicula\\0d280274-5d0a-4edb-aadf-e7e41e4a3a98.png"
     },
     {
       "Identity": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\pelicula\\10cdc0b3-7cd6-4dfe-a896-66e391357f9a.png",

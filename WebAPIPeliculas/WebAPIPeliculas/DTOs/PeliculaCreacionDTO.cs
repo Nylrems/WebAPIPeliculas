@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
+using WebAPIPeliculas.Controllers;
 using WebAPIPeliculas.Validaciones;
 
 namespace WebAPIPeliculas.DTOs
@@ -10,6 +12,7 @@ namespace WebAPIPeliculas.DTOs
         [TipoArchivoValidacion(GrupoTipoArchivo.Imagen)]
         public IFormFile Poster { get; set; }
 
+        [ModelBinder(BinderType = typeof(TypeBinder))]
         public List<int> GenerosIDs { get; set; }
     }
 }
