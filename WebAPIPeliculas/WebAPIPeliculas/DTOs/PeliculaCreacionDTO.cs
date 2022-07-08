@@ -14,5 +14,8 @@ namespace WebAPIPeliculas.DTOs
 
         [ModelBinder(BinderType = typeof(TypeBinder))]
         public List<int> GenerosIDs { get; set; }
+
+        [ModelBinder(BinderType = typeof(TypeBinder))]
+        public List<ActorPeliculasCreacionDTO> MyProperty { get; set; }
     }
 }
