@@ -43,7 +43,7 @@ namespace WebAPIPeliculas.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody]GeneroCreacionDTO generoCreacionDTO)
+        public async Task<ActionResult> Post([FromBody] GeneroCreacionDTO generoCreacionDTO)
         {
             var entidad = mapper.Map<Genero>(generoCreacionDTO);
             context.Add(entidad);

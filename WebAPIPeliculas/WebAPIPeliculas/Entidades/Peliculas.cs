@@ -11,5 +11,7 @@ namespace WebAPIPeliculas.Entidades
         public bool EnCines { get; set; }
         public DateTime FechaEstreno { get; set; }
         public string Poster { get; set; }
+        public List<PeliculasActores> peliculasActores { get; set; }
+        public List<PeliculasGeneros> peliculasGeneros { get; set; }
     }
 }
