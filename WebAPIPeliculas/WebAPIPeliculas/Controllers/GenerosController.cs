@@ -43,7 +43,7 @@ namespace WebAPIPeliculas.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] GeneroCreacionDTO generoCreacionDTO)
+        public async Task<ActionResult> Post([FromForm] GeneroCreacionDTO generoCreacionDTO)
         {
             var entidad = mapper.Map<Genero>(generoCreacionDTO);
             context.Add(entidad);
@@ -54,7 +54,7 @@ namespace WebAPIPeliculas.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Put(int id, [FromBody] GeneroCreacionDTO generoCreacionDTO)
+        public async Task<ActionResult> Put(int id, [FromForm] GeneroCreacionDTO generoCreacionDTO)
         {
             var entidad = mapper.Map<Genero>(generoCreacionDTO);
             entidad.Id = id;

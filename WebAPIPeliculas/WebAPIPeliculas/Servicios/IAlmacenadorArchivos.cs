@@ -1,4 +1,5 @@
-﻿namespace WebAPIPeliculas.Servicios
+﻿using System.Threading.Tasks;
+namespace WebAPIPeliculas.Servicios
 {
     public interface IAlmacenadorArchivos
     {
