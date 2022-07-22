@@ -51,9 +51,6 @@ namespace WebAPIPeliculas.Controllers
         {
             var pelicula = mapper.Map<Pelicula>(peliculaCreacionDTO);
 
-
-
-
             if (peliculaCreacionDTO.Poster != null)
             {
                 using (var memoryStream = new MemoryStream())

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z5bSBRFEu3hdiRpqLe4k8KT5BwqJHasRCxi2rd2oWrc=",
+  "Hash": "1Htec6OrMF1gArk2G7VXE++pTiaFBzyn1imRyXisCkA=",
   "Source": "WebAPIPeliculas",
   "BasePath": "_content/WebAPIPeliculas",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebAPIPeliculas\\wwwroot",
       "Source": "WebAPIPeliculas",
-      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
       "BasePath": "_content/WebAPIPeliculas",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\actores\\6b148671-fb7b-4dd0-88a0-b900645c41d5.png",
+      "Identity": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\actores\\6b148671-fb7b-4dd0-88a0-b900645c41d5.png",
       "SourceId": "WebAPIPeliculas",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
       "BasePath": "_content/WebAPIPeliculas",
       "RelativePath": "actores/6b148671-fb7b-4dd0-88a0-b900645c41d5.png",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\actores\\6b148671-fb7b-4dd0-88a0-b900645c41d5.png"
     },
     {
-      "Identity": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\actores\\e81d4955-1789-47be-a126-5acd92dc539f.png",
+      "Identity": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\actores\\e81d4955-1789-47be-a126-5acd92dc539f.png",
       "SourceId": "WebAPIPeliculas",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
       "BasePath": "_content/WebAPIPeliculas",
       "RelativePath": "actores/e81d4955-1789-47be-a126-5acd92dc539f.png",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\actores\\e81d4955-1789-47be-a126-5acd92dc539f.png"
     },
     {
-      "Identity": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\pelicula\\0d280274-5d0a-4edb-aadf-e7e41e4a3a98.png",
+      "Identity": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\pelicula\\0d280274-5d0a-4edb-aadf-e7e41e4a3a98.png",
       "SourceId": "WebAPIPeliculas",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
       "BasePath": "_content/WebAPIPeliculas",
       "RelativePath": "pelicula/0d280274-5d0a-4edb-aadf-e7e41e4a3a98.png",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\pelicula\\0d280274-5d0a-4edb-aadf-e7e41e4a3a98.png"
     },
     {
-      "Identity": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\pelicula\\10cdc0b3-7cd6-4dfe-a896-66e391357f9a.png",
+      "Identity": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\pelicula\\10cdc0b3-7cd6-4dfe-a896-66e391357f9a.png",
       "SourceId": "WebAPIPeliculas",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
       "BasePath": "_content/WebAPIPeliculas",
       "RelativePath": "pelicula/10cdc0b3-7cd6-4dfe-a896-66e391357f9a.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\pelicula\\10cdc0b3-7cd6-4dfe-a896-66e391357f9a.png"
     },
     {
-      "Identity": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\pelicula\\bee31d43-1e93-4f7d-a469-2230862fc601.png",
+      "Identity": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\pelicula\\bee31d43-1e93-4f7d-a469-2230862fc601.png",
       "SourceId": "WebAPIPeliculas",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
       "BasePath": "_content/WebAPIPeliculas",
       "RelativePath": "pelicula/bee31d43-1e93-4f7d-a469-2230862fc601.png",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\pelicula\\bee31d43-1e93-4f7d-a469-2230862fc601.png"
     },
     {
-      "Identity": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\pelicula\\da8dbdc0-18e8-4444-8b30-be2bb9d3073f.png",
+      "Identity": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\pelicula\\da8dbdc0-18e8-4444-8b30-be2bb9d3073f.png",
       "SourceId": "WebAPIPeliculas",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\wwwroot\\",
       "BasePath": "_content/WebAPIPeliculas",
       "RelativePath": "pelicula/da8dbdc0-18e8-4444-8b30-be2bb9d3073f.png",
       "AssetKind": "All",
