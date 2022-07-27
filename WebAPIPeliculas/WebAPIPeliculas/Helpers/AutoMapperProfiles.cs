@@ -28,7 +28,7 @@ namespace WebAPIPeliculas.Helpers
             CreateMap<PeliculaPatchDTO, Pelicula>().ReverseMap();
 
         }
-
+ 
         private List<PeliculasGeneros> MapPeliculasGeneros(PeliculaCreacionDTO peliculaCreacionDTO, 
         	    Pelicula pelicula)
         {
