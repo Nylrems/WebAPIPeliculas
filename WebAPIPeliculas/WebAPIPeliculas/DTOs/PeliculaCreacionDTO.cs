@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
-using WebAPIPeliculas.Helpers;
+using WebAPIPeliculas.Controllers;
 using WebAPIPeliculas.Validaciones;
 
 namespace WebAPIPeliculas.DTOs
