@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Newtonsoft.Json;
 
-namespace WebAPIPeliculas.Controllers
+namespace WebAPIPeliculas.Helpers
 {
     public class TypeBinder<T> : IModelBinder
     {
