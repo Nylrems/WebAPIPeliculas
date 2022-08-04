@@ -82,7 +82,22 @@ namespace WebAPIPeliculas.Controllers
                 peliculasQueryable = peliculasQueryable
                     .Where(x => x.peliculasGeneros.Select(y => y.GeneroId)
                     .Contains(filtroPeliculasDTO.GeneroId));
-            }            
+            }
+
+            if (!string.IsNullOrEmpty(filtroPeliculasDTO.CampoOrdenar))
+            {
+                if (filtroPeliculasDTO.CampoOrdenar == "titulo")
+                {
+                    if (filtroPeliculasDTO.OrdenAscendente)
+                    {
+                        peliculasQueryable = peliculasQueryable.OrderBy(x => x.Titulo);
+                    }
+                    else
+                    {
+                        peliculasQueryable = peliculasQueryable.OrderByDescending(x => x.Titulo);
+                    }
+                }
+            }
 
             await HttpContext.InsertarParametrosPaginacion(peliculasQueryable,
                 filtroPeliculasDTO.CantidadRegistrosPorPagina);
