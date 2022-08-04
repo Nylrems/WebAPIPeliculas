@@ -29,7 +29,77 @@ namespace WebAPIPeliculas.Controllers
         [HttpGet]
         public async Task<ActionResult<List<PeliculaDTO>>> Get()
         {
+<<<<<<< HEAD
             var peliculas = await context.Peliculas.ToListAsync();
+=======
+            var top = 5;
+            var hoy = DateTime.Today;
+
+            var proximosEstrenos = await context.Peliculas
+            .Where(x => x.FechaEstreno > hoy)
+            .OrderBy(x => x.FechaEstreno)
+            .Take(top)
+            .ToListAsync();
+
+            var enCines = await context.Peliculas
+            .Where(x => x.EnCines)
+            .Take(top)
+            .ToListAsync();
+
+            var resultado = new PeliculasIndexDTO();
+            resultado.FuturosEstrenos = mapper.Map<List<PeliculaDTO>>(proximosEstrenos);
+            resultado.EnCines = mapper.Map<List<PeliculaDTO>>(enCines);
+            return resultado;
+        }
+        [HttpGet("filtro")]
+        public async Task<ActionResult<List<PeliculaDTO>>> Filtrar([FromQuery] FiltroPeliculasDTO filtroPeliculasDTO)
+        {
+            var peliculasQueryable = context.Peliculas.AsQueryable();
+
+            if (!string.IsNullOrEmpty(filtroPeliculasDTO.Titulo))
+            {
+                peliculasQueryable = peliculasQueryable.Where(x => x.Titulo.Contains(filtroPeliculasDTO.Titulo));
+            }
+
+            if (filtroPeliculasDTO.EnCines)
+            {
+                peliculasQueryable = peliculasQueryable.Where(x => x.EnCines);
+            }
+
+            if (filtroPeliculasDTO.ProximosEstrenos)
+            {
+                var hoy = DateTime.Today;
+                peliculasQueryable = peliculasQueryable.Where(x => x.FechaEstreno > hoy);
+            }
+
+            if (filtroPeliculasDTO.GeneroId != 0)
+            {
+                peliculasQueryable = peliculasQueryable
+                    .Where(x => x.peliculasGeneros.Select(y => y.GeneroId)
+                    .Contains(filtroPeliculasDTO.GeneroId));
+            }
+
+            if (!string.IsNullOrEmpty(filtroPeliculasDTO.CampoOrdenar))
+            {
+                if (filtroPeliculasDTO.CampoOrdenar == "titulo")
+                {
+                    if (filtroPeliculasDTO.OrdenAscendente)
+                    {
+                        peliculasQueryable = peliculasQueryable.OrderBy(x => x.Titulo);
+                    }
+                    else
+                    {
+                        peliculasQueryable = peliculasQueryable.OrderByDescending(x => x.Titulo);
+                    }
+                }
+            }
+
+            await HttpContext.InsertarParametrosPaginacion(peliculasQueryable,
+                filtroPeliculasDTO.CantidadRegistrosPorPagina);
+
+            var peliculas = await peliculasQueryable.Paginar(filtroPeliculasDTO.paginacion).ToListAsync();
+
+>>>>>>> df3a0d80acff2e3dd9faba216650847221397622
             return mapper.Map<List<PeliculaDTO>>(peliculas);
         }
 
