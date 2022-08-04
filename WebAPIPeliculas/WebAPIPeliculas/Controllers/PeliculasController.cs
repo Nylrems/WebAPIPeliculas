@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Dynamic.Core;
 using WebAPIPeliculas.DTOs;
 using WebAPIPeliculas.Entidades;
 using WebAPIPeliculas.Helpers;
@@ -16,15 +17,18 @@ namespace WebAPIPeliculas.Controllers
         private readonly ApplicationDbContext context;
         private readonly IMapper mapper;
         private readonly IAlmacenadorArchivos almacenadorArchivos;
+        private readonly ILogger<PeliculasController> logger;
         private readonly string contenedor = "pelicula";
 
         public PeliculasController(ApplicationDbContext context,
             IMapper mapper,
-            IAlmacenadorArchivos almacenadorArchivos)
+            IAlmacenadorArchivos almacenadorArchivos,
+            ILogger<PeliculasController> logger)
         {
             this.context = context;
             this.mapper = mapper;
             this.almacenadorArchivos = almacenadorArchivos;
+            this.logger = logger;
         }
 
         // [HttpGet]
@@ -86,17 +90,28 @@ namespace WebAPIPeliculas.Controllers
 
             if (!string.IsNullOrEmpty(filtroPeliculasDTO.CampoOrdenar))
             {
-                if (filtroPeliculasDTO.CampoOrdenar == "titulo")
+                var tipoOrden = filtroPeliculasDTO.OrdenAscendente ? "ascending" : "descending";
+                try
                 {
-                    if (filtroPeliculasDTO.OrdenAscendente)
-                    {
-                        peliculasQueryable = peliculasQueryable.OrderBy(x => x.Titulo);
-                    }
-                    else
-                    {
-                        peliculasQueryable = peliculasQueryable.OrderByDescending(x => x.Titulo);
-                    }
+                    peliculasQueryable = peliculasQueryable.OrderBy($"{filtroPeliculasDTO.CampoOrdenar} {tipoOrden}");                    
                 }
+                catch (Exception ex)
+                {
+                    logger.LogError(ex.Message, ex);
+                }
+                
+                //? Esto hace lo mismo que arriba                
+                // if (filtroPeliculasDTO.CampoOrdenar == "titulo")
+                // {
+                //     if (filtroPeliculasDTO.OrdenAscendente)
+                //     {
+                //         peliculasQueryable = peliculasQueryable.OrderBy(x => x.Titulo);
+                //     }
+                //     else
+                //     {
+                //         peliculasQueryable = peliculasQueryable.OrderByDescending(x => x.Titulo);
+                //     }
+                // }
             }
 
             await HttpContext.InsertarParametrosPaginacion(peliculasQueryable,

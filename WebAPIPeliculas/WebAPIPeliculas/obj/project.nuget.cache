@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "V+6eqJNwOsdy5B9DlUsdty5Lx+SKYK9a66II2obCo2vPWn1d8UeAxIGAkWr/QrpAnrxn+ETHW1giPGbxXjT7yA==",
+  "dgSpecHash": "Tiai6iPE04zgxKdFd2UqaSGd8KptT3Qp9WvLeIhHq480J4dVl4QnBZUdSD6Q0s29HjvYJ9qw9iCyU67+idsviA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Smerl\\repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
   "expectedPackageFiles": [
@@ -49,6 +49,7 @@
     "C:\\Users\\Smerl\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\Smerl\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
     "C:\\Users\\Smerl\\.nuget\\packages\\system.io.hashing\\6.0.0\\system.io.hashing.6.0.0.nupkg.sha512",
+    "C:\\Users\\Smerl\\.nuget\\packages\\system.linq.dynamic.core\\1.2.19\\system.linq.dynamic.core.1.2.19.nupkg.sha512",
     "C:\\Users\\Smerl\\.nuget\\packages\\system.memory.data\\1.0.2\\system.memory.data.1.0.2.nupkg.sha512",
     "C:\\Users\\Smerl\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\Smerl\\.nuget\\packages\\system.runtime.caching\\4.7.0\\system.runtime.caching.4.7.0.nupkg.sha512",

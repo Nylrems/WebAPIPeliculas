@@ -183,3 +183,4 @@ C:\Users\Smerl\Repos\WebAPIPeliculas\WebAPIPeliculas\WebAPIPeliculas\bin\Debug\n
 C:\Users\Smerl\Repos\WebAPIPeliculas\WebAPIPeliculas\WebAPIPeliculas\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Smerl\Repos\WebAPIPeliculas\WebAPIPeliculas\WebAPIPeliculas\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Smerl\Repos\WebAPIPeliculas\WebAPIPeliculas\WebAPIPeliculas\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\Smerl\repos\WebApiPeliculas\WebAPIPeliculas\WebAPIPeliculas\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
