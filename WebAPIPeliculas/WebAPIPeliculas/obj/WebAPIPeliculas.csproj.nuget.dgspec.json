@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Smerl\\repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {}
+    "C:\\Users\\Smerlyn García\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Smerl\\repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {
+    "C:\\Users\\Smerlyn García\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Smerl\\repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
+        "projectUniqueName": "C:\\Users\\Smerlyn García\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
         "projectName": "WebAPIPeliculas",
-        "projectPath": "C:\\Users\\Smerl\\repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
-        "packagesPath": "C:\\Users\\Smerl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Smerl\\repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\obj\\",
+        "projectPath": "C:\\Users\\Smerlyn García\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
+        "packagesPath": "C:\\Users\\Smerlyn García\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Smerlyn García\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Smerl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Smerlyn García\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[6.0.6, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -68,13 +72,13 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[6.0.7, )"
             },
             "System.Linq.Dynamic.Core": {
               "target": "Package",
@@ -99,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
