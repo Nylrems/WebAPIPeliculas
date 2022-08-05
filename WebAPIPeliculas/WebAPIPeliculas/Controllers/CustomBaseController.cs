@@ -77,7 +77,7 @@ namespace WebAPIPeliculas.Controllers
             {
                 return BadRequest();
             }
-            var entidadDB = await context.Set(TEntidad).FirstOrDefaultAsync(x => x.Id == id);
+            var entidadDB = await context.Set<TEntidad>().FirstOrDefaultAsync(x => x.Id == id);
 
             if (entidadDB == null)
             {
