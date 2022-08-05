@@ -99,7 +99,7 @@ namespace WebAPIPeliculas.Controllers
                 {
                     logger.LogError(ex.Message, ex);
                 }
-                
+                //COmentario de prueba
                 //? Esto hace lo mismo que arriba                
                 // if (filtroPeliculasDTO.CampoOrdenar == "titulo")
                 // {
