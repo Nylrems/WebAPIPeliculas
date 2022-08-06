@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-appsettings.Development.json
-obj/
-=======
+
 WebAPIPeliculas/WebAPIPeliculas/obj/
 WebAPIPeliculas/WebAPIPeliculas/bin/
 WebAPIPeliculas/WebAPIPeliculas/wwwroot/
 WebAPIPeliculas/WebAPIPeliculas/appsettings.Development.json
 
->>>>>>> 1692ec77b6e1640aaff196a9417e7b0f259bb905
+
