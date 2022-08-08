@@ -1,5 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Threading.Tasks;
 using WebAPIPeliculas.Entidades;
+
 
 namespace WebAPIPeliculas
 {
@@ -20,6 +23,7 @@ namespace WebAPIPeliculas
             modelBuilder.Entity<PeliculasSalasDeCine>()
                 .HasKey(x => new {x.PeliculaId, x.SalaDeCineId});
                 
+            
             base.OnModelCreating(modelBuilder);
         }
 
@@ -28,7 +32,8 @@ namespace WebAPIPeliculas
         public DbSet<Pelicula> Peliculas { get; set; }
         public DbSet<PeliculasActores> peliculasActores { get; set; }
         public DbSet<PeliculasGeneros> peliculasGeneros { get; set; }
-        public DbSet<SalaDeCine> SalaDeCines {get; set;}
-        public DbSet<PeliculasSalasDeCine> PeliculasSalasDeCines {get; set;}
+        public DbSet<SalaDeCine> salaDeCine {get; set;}
+        public DbSet<PeliculasSalasDeCine> peliculasSalasDeCines {get; set;}
     }
 }
+ 

@@ -12,7 +12,7 @@ using WebAPIPeliculas;
 namespace WebAPIPeliculas.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220806065019_TablasSalasDeCine")]
+    [Migration("20220808195344_TablasSalasDeCine")]
     partial class TablasSalasDeCine
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -141,7 +141,7 @@ namespace WebAPIPeliculas.Migrations
 
                     b.HasIndex("SalaDeCineId");
 
-                    b.ToTable("PeliculasSalasDeCines");
+                    b.ToTable("peliculasSalasDeCines");
                 });
 
             modelBuilder.Entity("WebAPIPeliculas.Entidades.SalaDeCine", b =>
@@ -159,7 +159,7 @@ namespace WebAPIPeliculas.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("SalaDeCines");
+                    b.ToTable("salaDeCine");
                 });
 
             modelBuilder.Entity("WebAPIPeliculas.Entidades.PeliculasActores", b =>

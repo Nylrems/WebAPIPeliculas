@@ -139,7 +139,7 @@ namespace WebAPIPeliculas.Migrations
 
                     b.HasIndex("SalaDeCineId");
 
-                    b.ToTable("PeliculasSalasDeCines");
+                    b.ToTable("peliculasSalasDeCines");
                 });
 
             modelBuilder.Entity("WebAPIPeliculas.Entidades.SalaDeCine", b =>
@@ -157,7 +157,7 @@ namespace WebAPIPeliculas.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("SalaDeCines");
+                    b.ToTable("salaDeCine");
                 });
 
             modelBuilder.Entity("WebAPIPeliculas.Entidades.PeliculasActores", b =>
