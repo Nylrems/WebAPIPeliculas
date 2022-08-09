@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using NetTopologySuite.Geometries;
 using WebAPIPeliculas;
 
 #nullable disable
@@ -12,8 +13,8 @@ using WebAPIPeliculas;
 namespace WebAPIPeliculas.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220808195344_TablasSalasDeCine")]
-    partial class TablasSalasDeCine
+    [Migration("20220809025056_SalaDeCineUbicacion")]
+    partial class SalaDeCineUbicacion
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -156,6 +157,9 @@ namespace WebAPIPeliculas.Migrations
                         .IsRequired()
                         .HasMaxLength(120)
                         .HasColumnType("nvarchar(120)");
+
+                    b.Property<Point>("Ubicacion")
+                        .HasColumnType("geography");
 
                     b.HasKey("Id");
 

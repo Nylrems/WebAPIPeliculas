@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using NetTopologySuite.Geometries;
 using WebAPIPeliculas;
 
 #nullable disable
@@ -154,6 +155,9 @@ namespace WebAPIPeliculas.Migrations
                         .IsRequired()
                         .HasMaxLength(120)
                         .HasColumnType("nvarchar(120)");
+
+                    b.Property<Point>("Ubicacion")
+                        .HasColumnType("geography");
 
                     b.HasKey("Id");
 

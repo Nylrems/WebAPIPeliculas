@@ -7,5 +7,9 @@ namespace WebAPIPeliculas.DTOs
         [Required]
         [StringLength(120)]
         public string Nombre { get; set; }
+        [Range(-90, 90)]
+        public double Latitud { get; set; }
+        [Range(-90, 90)]
+        public double Logitud { get; set; } 
     }
 }
