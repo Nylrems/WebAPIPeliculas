@@ -16,9 +16,13 @@ namespace WebAPIPeliculas.Helpers
                 .ForMember(x => x.Latitud, x => x.MapFrom(y => y.Ubicacion.Y))
                 .ForMember(x => x.Longitud, x => x.MapFrom(y => y.Ubicacion.X));
 
-            CreateMap<SalaDeCineDTO, SalaDeCine>();
+            CreateMap<SalaDeCineDTO, SalaDeCine>()
+                .ForMember(x => x.Ubicacion, x => x.MapFrom(y => 
+                geometryFactory.CreatePoint(new Coordinate(y.Longitud, y.Latitud))));
             
-            CreateMap<SalaDeCineCreacionDTO, SalaDeCine>();
+            CreateMap<SalaDeCineCreacionDTO, SalaDeCine>()
+                .ForMember(x => x.Ubicacion, x => x.MapFrom(y => 
+                geometryFactory.CreatePoint(new Coordinate(y.Longitud, y.Latitud))));
 
             CreateMap<Actor, ActorDTO>().ReverseMap();
             CreateMap<ActorCreacionDTO, Actor>()
