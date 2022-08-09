@@ -23,6 +23,8 @@ namespace WebAPIPeliculas.Helpers
             CreateMap<SalaDeCineCreacionDTO, SalaDeCine>()
                 .ForMember(x => x.Ubicacion, x => x.MapFrom(y => 
                 geometryFactory.CreatePoint(new Coordinate(y.Longitud, y.Latitud))));
+            
+            
 
             CreateMap<Actor, ActorDTO>().ReverseMap();
             CreateMap<ActorCreacionDTO, Actor>()

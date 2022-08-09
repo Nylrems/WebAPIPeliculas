@@ -13,8 +13,8 @@ using WebAPIPeliculas;
 namespace WebAPIPeliculas.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220809025056_SalaDeCineUbicacion")]
-    partial class SalaDeCineUbicacion
+    [Migration("20220809122447_SalasDeCineUbicacion")]
+    partial class SalasDeCineUbicacion
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -30,7 +30,7 @@ namespace WebAPIPeliculas
             services.AddSingleton<GeometryFactory>(NtsGeometryServices.Instance.CreateGeometryFactory(srid: 4326));
 
             services.AddSingleton(provider =>
-            {
+            
                 new MapperConfiguration(config =>
                 {
                     var geometryFactory = provider.GetRequiredService<GeometryFactory>();
