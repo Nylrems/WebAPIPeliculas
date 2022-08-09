@@ -54,6 +54,23 @@ namespace WebAPIPeliculas.Controllers
                 return BadRequest(result.Errors);
             }
         }
+
+        [HttpPost("Login")]
+        public async Task<ActionResult<UserToken>> Login([FromBody] UserInfo model)
+        {
+            var resultado = await _signInManager.PasswordSignInAsync(model.Email,
+            model.Password, isPersistent: false, lockoutOnFailure: false);
+
+            if (resultado.Succeeded)
+            {
+                return await ConstruirToken(model);
+            }
+            else
+            {
+                return BadRequest("Invalid login attempt");
+            }
+        }
+
         [HttpPost("RenovarToken")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult<UserToken>> Renovar()
