@@ -71,7 +71,7 @@ namespace WebAPIPeliculas
             //         ClaimValue = "Admin"
             //     });
 
-               
+
         }
 
         public DbSet<Genero> Generos { get; set; }
@@ -81,5 +81,6 @@ namespace WebAPIPeliculas
         public DbSet<PeliculasGeneros> peliculasGeneros { get; set; }
         public DbSet<SalaDeCine> salaDeCine { get; set; }
         public DbSet<PeliculasSalasDeCine> peliculasSalasDeCines { get; set; }
+        public DbSet<Review> reviews { get; set; }
     }
 }
