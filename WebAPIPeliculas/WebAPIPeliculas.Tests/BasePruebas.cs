@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebAPIPeliculas.Tests
 {
-    internal class BasePruebas
+    public class BasePruebas
     {
     }
 }
