@@ -60,6 +60,7 @@ namespace WebAPIPeliculas.Controllers
         }
 
         [HttpPut("{reviewId:int}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult> Put(int peliculaId, int reviewId,
             [FromBody] ReviewCreacionDTO reviewCreacionDTO)
         {

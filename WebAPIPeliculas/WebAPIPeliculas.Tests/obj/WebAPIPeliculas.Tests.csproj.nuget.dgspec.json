@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.Tests\\WebAPIPeliculas.Tests.csproj": {}
+    "C:\\Users\\Smerlyn García\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.Tests\\WebAPIPeliculas.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.Tests\\WebAPIPeliculas.Tests.csproj": {
+    "C:\\Users\\Smerlyn García\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.Tests\\WebAPIPeliculas.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.Tests\\WebAPIPeliculas.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Smerlyn García\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.Tests\\WebAPIPeliculas.Tests.csproj",
         "projectName": "WebAPIPeliculas.Tests",
-        "projectPath": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.Tests\\WebAPIPeliculas.Tests.csproj",
-        "packagesPath": "C:\\Users\\Smerl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Smerl\\Repos\\WebApiPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.Tests\\obj\\",
+        "projectPath": "C:\\Users\\Smerlyn García\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.Tests\\WebAPIPeliculas.Tests.csproj",
+        "packagesPath": "C:\\Users\\Smerlyn García\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Smerlyn García\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Smerl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Smerlyn García\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
