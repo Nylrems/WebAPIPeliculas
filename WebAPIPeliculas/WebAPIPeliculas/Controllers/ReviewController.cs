@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAPIPeliculas.DTOs;
 using WebAPIPeliculas.Entidades;
+using WebAPIPeliculas.Helpers;
 
 namespace WebAPIPeliculas.Controllers
 {
-    [ApiController]
+
     [Route("api/peliculas/{peliculaId:int}/reviews")]
+    [ServiceFilter(typeof(PeliculaExisteAttribute))]
     public class ReviewController : CustomBaseController
     {
         private readonly ApplicationDbContext context;
@@ -27,12 +29,7 @@ namespace WebAPIPeliculas.Controllers
         public async Task<ActionResult<List<ReviewDTO>>> Get(int peliculaId,
         [FromQuery] PaginacionDTO paginacionDTO)
         {
-            var existePelicula = await context.Peliculas.AnyAsync(x => x.Id == peliculaId);
 
-            if (!existePelicula)
-            {
-                return NotFound();
-            }
 
             var queryable = context.reviews.Include(x => x.Usuario).AsQueryable();
             queryable = queryable.Where(x => x.PeliculaId == peliculaId);
@@ -43,11 +40,7 @@ namespace WebAPIPeliculas.Controllers
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         public async Task<ActionResult> Post(int peliculaId, [FromBody] ReviewCreacionDTO reviewCreacionDTO)
         {
-            var existePelicula = await context.Peliculas.AnyAsync(x => x.Id == peliculaId);
-            if (!existePelicula)
-            {
-                return NotFound();
-            }
+
             var usuarioId = HttpContext.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.NameIdentifier).Value;
             var reviewExiste = await context.reviews
                 .AnyAsync(x => x.PeliculaId == peliculaId && x.UsuarioId == usuarioId);
@@ -70,12 +63,7 @@ namespace WebAPIPeliculas.Controllers
         public async Task<ActionResult> Put(int peliculaId, int reviewId,
             [FromBody] ReviewCreacionDTO reviewCreacionDTO)
         {
-            var existePelicula = await context.Peliculas.AnyAsync(x => x.Id == peliculaId);
 
-            if (!existePelicula)
-            {
-                return NotFound();
-            }
             var reviewDB = await context.reviews.FirstOrDefaultAsync(x => x.Id == reviewId);
 
             if (reviewDB == null)
