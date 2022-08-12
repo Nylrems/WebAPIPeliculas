@@ -5,6 +5,10 @@ namespace WebAPIPeliculas.Tests.PruebasUnitarias
     [TestClass]
     public class GenerosControllerTests : BasePruebas
     {
-        
+        //Preparación
+
+        //Prueba
+
+        //Verificación
     }    
 }
