@@ -163,3 +163,5 @@ D:\Repos\WebAPIPeliculas\WebAPIPeliculas\WebAPIPelicuals.Tests\obj\Debug\net6.0\
 D:\Repos\WebAPIPeliculas\WebAPIPeliculas\WebAPIPelicuals.Tests\obj\Debug\net6.0\WebAPIPeliculas.Tests.pdb
 D:\Repos\WebAPIPeliculas\WebAPIPeliculas\WebAPIPelicuals.Tests\obj\Debug\net6.0\WebAPIPeliculas.Tests.genruntimeconfig.cache
 D:\Repos\WebAPIPeliculas\WebAPIPeliculas\WebAPIPelicuals.Tests\obj\Debug\net6.0\ref\WebAPIPeliculas.Tests.dll
+D:\Repos\WebAPIPeliculas\WebAPIPeliculas\WebAPIPelicuals.Tests\bin\Debug\net6.0\Castle.Core.dll
+D:\Repos\WebAPIPeliculas\WebAPIPeliculas\WebAPIPelicuals.Tests\bin\Debug\net6.0\Moq.dll

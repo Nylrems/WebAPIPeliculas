@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s0rn9enMmuUKQGhZrzPjfXel+2CMWTZXZNAbOkVFWfmL+UhiZG7GY3y7XigHJ8nR8ZYIKU5sXWVqsforaHf+og==",
+  "dgSpecHash": "Fc6a5hhpQTPlCL9mFLzIBiDlTQ7U+cDqweI1HrIyNqhTzy4QFNUaBCj+7UNCnvzbBugAMyD6FuEzlCqDxehvwQ==",
   "success": true,
   "projectFilePath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\azure.storage.blobs\\12.13.0\\azure.storage.blobs.12.13.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\azure.storage.common\\12.12.0\\azure.storage.common.12.12.0.nupkg.sha512",
+    "C:\\Users\\smerlyn garcia\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\geoapi.core\\1.7.5\\geoapi.core.1.7.5.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
@@ -77,6 +78,7 @@
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\smerlyn garcia\\.nuget\\packages\\moq\\4.18.2\\moq.4.18.2.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\mstest.testadapter\\2.2.8\\mstest.testadapter.2.2.8.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\mstest.testframework\\2.2.8\\mstest.testframework.2.2.8.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
@@ -111,6 +113,7 @@
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\system.console\\4.3.0\\system.console.4.3.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\smerlyn garcia\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\system.diagnostics.textwritertracelistener\\4.3.0\\system.diagnostics.textwritertracelistener.4.3.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\system.diagnostics.tools\\4.3.0\\system.diagnostics.tools.4.3.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\system.diagnostics.tracesource\\4.3.0\\system.diagnostics.tracesource.4.3.0.nupkg.sha512",
