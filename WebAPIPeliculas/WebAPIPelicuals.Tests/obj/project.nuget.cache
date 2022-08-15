@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XOO/MEWiLkhHo2LshB+z4a77k35HZMkL5XdrSNEfgd0IiPfgQJjgP4MC6Rq4Ul9z2i+ru7OD7+AdgXSphdiIjw==",
+  "dgSpecHash": "s0rn9enMmuUKQGhZrzPjfXel+2CMWTZXZNAbOkVFWfmL+UhiZG7GY3y7XigHJ8nR8ZYIKU5sXWVqsforaHf+og==",
   "success": true,
-  "projectFilePath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPelicuals.Tests.csproj",
+  "projectFilePath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\smerlyn garcia\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

@@ -9779,9 +9779,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPelicuals.Tests.csproj",
-      "projectName": "WebAPIPelicuals.Tests",
-      "projectPath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPelicuals.Tests.csproj",
+      "projectUniqueName": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj",
+      "projectName": "WebAPIPeliculas.Tests",
+      "projectPath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj",
       "packagesPath": "C:\\Users\\smerlyn garcia\\.nuget\\packages\\",
       "outputPath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\obj\\",
       "projectStyle": "PackageReference",
