@@ -108,6 +108,7 @@ namespace WebAPIPeliculas.Controllers
             return NoContent();
         }
         protected async Task<ActionResult> Delete<TEntidad>(int id) where TEntidad : class, IId, new()
+        
         {
             var existe = await context.Set<TEntidad>().AnyAsync(x => x.Id == id);
 
