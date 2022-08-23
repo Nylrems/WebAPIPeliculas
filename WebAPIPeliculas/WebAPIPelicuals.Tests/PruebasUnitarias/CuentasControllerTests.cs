@@ -25,7 +25,51 @@ namespace WebAPIPeliculas.Tests.PruebasUnitarias
         [TestMethod]
         public async Task CrearUsuario()
         {
+            var nombreBD = Guid.NewGuid().ToString();
 
+            await CrearUsuarioHelper(nombreBD);
+
+            var context2 = ConstruirContext(nombreBD);
+            var conteo = await context2.Users.CountAsync();
+            Assert.AreEqual(1, conteo);
+        }
+
+        [TestMethod]
+        public async Task UsuarioNoPuedeLoguearse()
+        {
+            var nombreBD = Guid.NewGuid().ToString();
+            await CrearUsuarioHelper(nombreBD);
+
+            var controller = ConstruirCuentasConController(nombreBD);
+            var userInfo = new UserInfo() { Email = "probando@gmail.com", Password = "isgjied" };
+            var respuesta = await controller.Login(userInfo);
+
+            Assert.IsNull(respuesta.Value);
+            var resultado = respuesta.Result as BadRequestObjectResult;
+            Assert.IsNotNull(resultado);
+        }
+
+        [TestMethod]
+        public async Task UsuarioPuedeLoguearse()
+        {
+            var nombreBD = Guid.NewGuid().ToString();
+            await CrearUsuarioHelper(nombreBD);
+
+            var controller = ConstruirCuentasConController(nombreBD);
+            var userInfo = new UserInfo() {Email = "probando@gmail.com", Password = "Aa123456*"};
+            var respuesta = await controller.Login(userInfo);
+
+            Assert.IsNotNull(respuesta.Value);
+            Assert.IsNotNull(respuesta.Value.Token);
+
+            
+        }
+
+        private async Task CrearUsuarioHelper(string nombreBD)
+        {
+            var cuentasController = ConstruirCuentasConController(nombreBD);
+            var userInfo = new UserInfo() { Email = "probando@gmail.com", Password = "Aa123456*" };
+            await cuentasController.CreateUser(userInfo);
         }
 
         private CuentasController ConstruirCuentasConController(string nombreBD)
