@@ -1,11 +1,15 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Text;
 using WebAPIPeliculas.Controllers;
 using WebAPIPeliculas.DTOs;
 using WebAPIPeliculas.Entidades;
+using Moq;
+using Castle.Core.Logging;
+using Microsoft.Extensions.Logging;
 
 namespace WebAPIPeliculas.Tests.PruebasUnitarias
 {
@@ -110,6 +114,120 @@ namespace WebAPIPeliculas.Tests.PruebasUnitarias
             var peliculas = respuesta.Value;
             Assert.AreEqual(1, peliculas.Count);
             Assert.AreEqual("No estrenada", peliculas[0].Titulo);
+        }
+        [TestMethod]
+        public async Task FiltrarPorGenero()
+        {
+            var nombreBD = CrearDataPruba();
+            var mapper = ConfigurarAutoMapper();
+            var context = ConstruirContext(nombreBD);
+
+            var controller = new PeliculasController(context, mapper, null, null);
+            controller.ControllerContext.HttpContext = new DefaultHttpContext();
+
+            var generoId = context.Generos.Select(x => x.Id).First();
+
+            var filtroDTO = new FiltroPeliculasDTO()
+            {
+                GeneroId = generoId
+            };
+
+            var respuesta = await controller.Filtrar(filtroDTO);
+            var peliculas = respuesta.Value;
+            Assert.AreEqual(1, peliculas.Count);
+            Assert.AreEqual("Película con género", peliculas[0].Titulo);
+        }
+        [TestMethod]
+        public async Task FiltrarOrdenarTituloAscendente()
+        {
+            var nombreBD = CrearDataPruba();
+            var mapper = ConfigurarAutoMapper();
+            var context = ConstruirContext(nombreBD);
+
+            var controller = new PeliculasController(context, mapper, null, null);
+            controller.ControllerContext.HttpContext = new DefaultHttpContext();
+
+            var filtroDTO = new FiltroPeliculasDTO()
+            {
+                CampoOrdenar = "titulo",
+                OrdenAscendente = true
+            };
+
+            var respuesta = await controller.Filtrar(filtroDTO);
+            var pelicula = respuesta.Value;
+
+            var context2 = ConstruirContext(nombreBD);
+            var peliculasDB = context2.Peliculas.OrderBy(x => x.Titulo).ToList();
+
+            Assert.AreEqual(peliculasDB.Count, pelicula.Count);
+
+            for (int i = 0; i < peliculasDB.Count; i++)
+            {
+                var peliculaDelControlador = pelicula[i];
+                var peliculaDB = peliculasDB[i];
+
+                Assert.AreEqual(peliculaDB.Id, peliculaDelControlador.Id);
+            }
+        }
+        [TestMethod]
+        public async Task FiltrarTituloDescendente()
+        {
+            var nombreBD = CrearDataPruba();
+            var mapper = ConfigurarAutoMapper();
+            var context = ConstruirContext(nombreBD);
+
+            var controller = new PeliculasController(context, mapper, null, null);
+            controller.ControllerContext.HttpContext = new DefaultHttpContext();
+
+            var filtroDTO = new FiltroPeliculasDTO()
+            {
+                CampoOrdenar = "titulo",
+                OrdenAscendente = false
+            };
+
+            var respuesta = await controller.Filtrar(filtroDTO);
+            var pelicula = respuesta.Value;
+
+            var context2 = ConstruirContext(nombreBD);
+            var peliculasDB = context2.Peliculas.OrderByDescending(x => x.Titulo).ToList();
+
+            Assert.AreEqual(peliculasDB.Count, pelicula.Count);
+
+            for (int i = 0; i < peliculasDB.Count; i++)
+            {
+                var peliculaDelControlador = pelicula[i];
+                var peliculaDB = peliculasDB[i];
+
+                Assert.AreEqual(peliculaDB.Id, peliculaDelControlador.Id);
+            }
+        }
+        [TestMethod]
+        public async Task FiltrarPorCampoIncorrectoDevolverPelicula()
+        {
+            var nombreBD = CrearDataPruba();
+            var mapper = ConfigurarAutoMapper();
+            var context = ConstruirContext(nombreBD);
+
+            var mock = new Mock<ILogger<PeliculasController>>();
+
+            var controller = new PeliculasController(context, mapper, null, mock.Object);
+            controller.ControllerContext.HttpContext = new DefaultHttpContext();
+
+            var filtroDTO = new FiltroPeliculasDTO()
+            {
+                CampoOrdenar = "gjias",
+                OrdenAscendente = true
+            };
+
+            var respuesta = await controller.Filtrar(filtroDTO);
+            var peliculas = respuesta.Value;
+
+            var context2 = ConstruirContext(nombreBD);
+            var peliculasDB = context2.Peliculas.ToList();
+            Assert.AreEqual(peliculasDB.Count, peliculas.Count);
+            Assert.AreEqual(1, mock.Invocations.Count);
+
+
         }
     }
 }
