@@ -65,10 +65,51 @@ namespace WebAPIPeliculas.Tests.PruebasUnitarias
                 CantidadRegistrosPorPagina = 10
             };
 
-            var respuesta = await controller.Filtrar(filtroDTO); 
+            var respuesta = await controller.Filtrar(filtroDTO);
             var peliculas = respuesta.Value;
             Assert.AreEqual(1, peliculas.Count);
             Assert.AreEqual(tituloPelicula, peliculas[0].Titulo);
+        }
+
+        [TestMethod]
+        public async Task FiltrarEnCines()
+        {
+            var nombreBD = CrearDataPruba();
+            var mapper = ConfigurarAutoMapper();
+            var context = ConstruirContext(nombreBD);
+
+            var controller = new PeliculasController(context, mapper, null, null);
+            controller.ControllerContext.HttpContext = new DefaultHttpContext();
+
+            var filtroDTO = new FiltroPeliculasDTO()
+            {
+                EnCines = true
+            };
+
+            var respuesta = await controller.Filtrar(filtroDTO);
+            var peliculas = respuesta.Value;
+            Assert.AreEqual(1, peliculas.Count);
+            Assert.AreEqual("Película en Cines", peliculas[0].Titulo);
+        }
+        [TestMethod]
+        public async Task FiltrarProximosEstrenos()
+        {
+            var nombreBD = CrearDataPruba();
+            var mapper = ConfigurarAutoMapper();
+            var context = ConstruirContext(nombreBD);
+
+            var controller = new PeliculasController(context, mapper, null, null);
+            controller.ControllerContext.HttpContext = new DefaultHttpContext();
+
+            var filtroDTO = new FiltroPeliculasDTO()
+            {
+                ProximosEstrenos = true
+            };
+
+            var respuesta = await controller.Filtrar(filtroDTO);
+            var peliculas = respuesta.Value;
+            Assert.AreEqual(1, peliculas.Count);
+            Assert.AreEqual("No estrenada", peliculas[0].Titulo);
         }
     }
 }
