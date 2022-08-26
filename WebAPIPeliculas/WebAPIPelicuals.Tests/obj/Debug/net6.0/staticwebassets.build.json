@@ -1,0 +1,23 @@
+{
+  "Version": 1,
+  "Hash": "eo3Psrgnu4qyEp6sMUo4eb7GCWVIJkZBEJ9a4shTLg4=",
+  "Source": "WebAPIPeliculas.Tests",
+  "BasePath": "_content/WebAPIPeliculas.Tests",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
+      "Version": 2,
+      "Source": "WebAPIPeliculas",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

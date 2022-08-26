@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj": {}
+    "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj": {
+    "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj",
         "projectName": "WebAPIPeliculas.Tests",
-        "projectPath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj",
+        "projectPath": "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\WebAPIPeliculas.Tests.csproj",
         "packagesPath": "C:\\Users\\smerlyn garcia\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\obj\\",
+        "outputPath": "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPelicuals.Tests\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\smerlyn garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {
-                "projectPath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj"
+              "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {
+                "projectPath": "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj"
               }
             }
           }
@@ -55,6 +51,10 @@
             "MSTest.TestFramework": {
               "target": "Package",
               "version": "[2.2.8, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[6.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
@@ -85,6 +85,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -93,21 +96,17 @@
         }
       }
     },
-    "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {
+    "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
+        "projectUniqueName": "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
         "projectName": "WebAPIPeliculas",
-        "projectPath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
+        "projectPath": "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas.csproj",
         "packagesPath": "C:\\Users\\smerlyn garcia\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\obj\\",
+        "outputPath": "C:\\Users\\smerlyn garcia\\source\\repos\\WebAPIPeliculas\\WebAPIPeliculas\\WebAPIPeliculas\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\smerlyn garcia\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
