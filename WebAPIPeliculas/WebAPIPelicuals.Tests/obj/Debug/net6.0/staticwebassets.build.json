@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eo3Psrgnu4qyEp6sMUo4eb7GCWVIJkZBEJ9a4shTLg4=",
+  "Hash": "Wpk603DqToikrodOAOfMbjYU4CipmHd5jKtd+zu981k=",
   "Source": "WebAPIPeliculas.Tests",
   "BasePath": "_content/WebAPIPeliculas.Tests",
   "Mode": "Default",
@@ -11,10 +11,10 @@
       "Version": 2,
       "Source": "WebAPIPeliculas",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishProperties": "",
       "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildProperties": "",
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
     }
   ],
