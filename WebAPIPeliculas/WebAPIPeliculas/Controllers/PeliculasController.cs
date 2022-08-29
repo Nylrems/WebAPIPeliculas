@@ -100,8 +100,8 @@ namespace WebAPIPeliculas.Controllers
                 {
                     logger.LogError(ex.Message, ex);
                 }
-                //COmentario de prueba para el tipoOrden
-                //? Esto hace lo mismo que arriba                
+                
+                //? Esto hace lo mismo que arriba
                 // if (filtroPeliculasDTO.CampoOrdenar == "titulo")
                 // {
                 //     if (filtroPeliculasDTO.OrdenAscendente)
